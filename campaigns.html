@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaigns - Hope Smile Foundation Charity organisation</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="CSS/campaingnex.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/campaigns.css">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">❤️</div>
+                <span>Hope Smile Foundation</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="campaigns.html" class="active">Campaigns</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="donate.html" class="donate-btn primary-cta">Donate Now</a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Campaigns Hero -->
+    <section class="campaigns-hero">
+        <div class="container">
+            <div class="campaigns-hero-content">
+                <h1>Our Active Campaigns</h1>
+                <p>Join us in making a difference. Each campaign is designed to create sustainable change in children's
+                    lives.</p>
+                <div class="campaigns-filter">
+                    <button class="filter-btn active" data-filter="all">All Campaigns</button>
+                    <button class="filter-btn" data-filter="education">Education</button>
+                    <button class="filter-btn" data-filter="health">Health & Nutrition</button>
+                    <button class="filter-btn" data-filter="water">Clean Water</button>
+                    <button class="filter-btn" data-filter="emergency">Emergency Relief</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Active Campaigns -->
+    <section class="active-campaigns">
+        <div class="container">
+            <h2>Featured Campaigns</h2>
+            <p class="section-subtitle">Help us reach our goals for these critical initiatives</p>
+
+            <div class="campaigns-grid">
+                <!-- Campaign cards will be here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Completed Campaigns -->
+    <section class="completed-campaigns">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <p class="section-subtitle">Campaigns we've successfully completed thanks to your support</p>
+            <div class="success-stories">
+                <!-- Success stories will be here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaign CTA -->
+    <section class="campaign-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Start Your Own Campaign</h2>
+                <p>Want to fundraise for KidHope? Create your own campaign and rally your friends, family, or colleagues
+                    to support children in need.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="primary-cta">Start Fundraising</a>
+                    <a href="donate.html" class="secondary-cta">Donate to a Campaign</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <div class="logo-icon">❤️</div>
+                        <span>Hope Smile Foundation</span>
+                    </div>
+                    <p>Creating brighter futures for children in need through education, nutrition, and community
+                        support.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Campaigns</h4>
+                    <ul>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#health">Health & Nutrition</a></li>
+                        <li><a href="#water">Clean Water</a></li>
+                        <li><a href="#emergency">Emergency Relief</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Jinja main Street,</p>
+                    <p><i class="fas fa-phone"></i> +256705243850</p>
+                    <p><i class="fas fa-envelope"></i>hopesmile@gmailcom</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Hope Smile Foundation. All rights reserved. | <a href="#">Privacy Policy</a> | <a
+                        href="#">Terms of
+                        Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-floating">
+        <a href="https://wa.me/15551234567" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Campaign Details Modal -->
+    <div id="campaignModal" class="modal">
+        <div class="modal-content campaign-modal">
+            <span class="modal-close">&times;</span>
+            <div class="modal-campaign-image">
+                <img id="modalCampaignImg" src="" alt="">
+            </div>
+            <div class="modal-campaign-details">
+                <h2 id="modalCampaignTitle"></h2>
+                <p id="modalCampaignDescription"></p>
+                <div class="modal-stats">
+                    <div class="modal-stat">
+                        <h4 id="modalRaised"></h4>
+                        <p>Raised</p>
+                    </div>
+                    <div class="modal-stat">
+                        <h4 id="modalGoal"></h4>
+                        <p>Goal</p>
+                    </div>
+                    <div class="modal-stat">
+                        <h4 id="modalPercentage"></h4>
+                        <p>Funded</p>
+                    </div>
+                </div>
+                <div class="modal-progress-bar">
+                    <div class="modal-progress-fill"></div>
+                </div>
+                <a href="donate.html" class="modal-donate-btn">Donate Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/campaigns.js"></script>
+</body>
+
+</html>
