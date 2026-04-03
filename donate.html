@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Hope Smile Foundation Charity organisation</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/donateex.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">❤️</div>
+                <span>Hope Smile</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="campaigns.html">Campaigns</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="donate.html" class="active">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="donate.html" class="donate-btn primary-cta">Donate Now</a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Donate Hero -->
+    <section class="donate-hero">
+        <div class="container">
+            <div class="donate-hero-content">
+                <h1>Make a Difference Today</h1>
+                <p>Your donation provides education, nutrition, and hope to children in need. Every contribution creates
+                    lasting change.</p>
+                <div class="donate-stats">
+                    <div class="stat">
+                        <h3>25,000+</h3>
+                        <p>Children Helped</p>
+                    </div>
+                    <div class="stat">
+                        <h3>150+</h3>
+                        <p>Communities Reached</p>
+                    </div>
+                    <div class="stat">
+                        <h3>98%</h3>
+                        <p>Funds to Programs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Options -->
+    <section class="donation-options">
+        <div class="container">
+            <h2>Choose Your Impact</h2>
+            <p>Select a donation amount or choose your own</p>
+
+            <div class="quick-donate-options">
+                <div class="donate-amount" data-amount="10">
+                    <h3>$10</h3>
+                    <p>Provides school supplies for 1 child</p>
+                </div>
+                <div class="donate-amount" data-amount="25">
+                    <h3>$25</h3>
+                    <p>Feeds a child for 1 month</p>
+                </div>
+                <div class="donate-amount" data-amount="50">
+                    <h3>$50</h3>
+                    <p>Supports clean water for a family</p>
+                </div>
+                <div class="donate-amount" data-amount="100">
+                    <h3>$100</h3>
+                    <p>Sponsors education for 1 year</p>
+                </div>
+            </div>
+
+            <div class="custom-donate">
+                <h3>Custom Amount</h3>
+                <div class="custom-amount-input">
+                    <span>$</span>
+                    <input type="number" id="customAmount" placeholder="Enter amount" min="1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Methods -->
+    <section class="donation-methods">
+        <div class="container">
+            <h2>How to Donate</h2>
+            <div class="methods-grid">
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Money</h3>
+                    <p>Send your donation via mobile money services</p>
+                    <div class="method-details">
+                        <p><strong>MTN:</strong> 055 123 4567</p>
+                        <p><strong>AirtelTigo:</strong> 027 123 4567</p>
+                        <p><strong>Vodafone:</strong> 020 123 4567</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Bank Transfer</h3>
+                    <p>Transfer directly to our bank account</p>
+                    <div class="method-details">
+                        <p><strong>Bank:</strong> Hope Bank International</p>
+                        <p><strong>Account:</strong> 1234567890</p>
+                        <p><strong>SWIFT:</strong> HBIUS33</p>
+                        <p><strong>Routing:</strong> 021000021</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fab fa-paypal"></i>
+                    </div>
+                    <h3>PayPal</h3>
+                    <p>Donate securely through PayPal</p>
+                    <div class="method-details">
+                        <p>Click below to donate via PayPal</p>
+                        <button class="paypal-btn">Donate with PayPal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="donation-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Make Your Donation</h2>
+                <p>Fill out the form below and we'll contact you with payment instructions</p>
+
+                <form id="donationForm" class="donation-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="+1 (555) 123-4567">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="amount">Donation Amount ($) *</label>
+                        <input type="number" id="amount" required placeholder="50" min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentMethod">Preferred Payment Method *</label>
+                        <select id="paymentMethod" required>
+                            <option value="">Select method</option>
+                            <option value="mobile">Mobile Money</option>
+                            <option value="bank">Bank Transfer</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" rows="4"
+                            placeholder="Any special instructions or dedication..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            <span>I agree to the terms and conditions</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-donation-btn">Submit Donation</button>
+                </form>
+            </div>
+
+            <div class="donation-impact">
+                <h3>Your Donation's Impact</h3>
+                <div class="impact-items">
+                    <div class="impact-item">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1122&q=80"
+                            alt="Education">
+                        <h4>Education</h4>
+                        <p>$50 provides school supplies for 5 children</p>
+                    </div>
+                    <div class="impact-item">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Nutrition">
+                        <h4>Nutrition</h4>
+                        <p>$25 feeds a child for 1 month</p>
+                    </div>
+                    <div class="impact-item">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                            alt="Clean Water">
+                        <h4>Clean Water</h4>
+                        <p>$100 provides clean water for 10 families</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternative CTAs -->
+    <section class="alternative-ctas">
+        <div class="container">
+            <div class="cta-grid">
+                <div class="cta-card whatsapp-cta">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Donate via WhatsApp</h3>
+                    <p>Message us directly for quick donation assistance</p>
+                    <a href="https://wa.me/15551234567" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+                <div class="cta-card contact-cta">
+                    <i class="fas fa-headset"></i>
+                    <h3>Contact Us to Donate</h3>
+                    <p>Our team is ready to assist with your donation</p>
+                    <a href="contact.html" class="contact-btn">
+                        <i class="fas fa-phone"></i> Contact Support
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <div class="logo-icon">❤️</div>
+                        <span>Hope Smile Foundation</span>
+                    </div>
+                    <p>Creating brighter futures for children in need through education, nutrition, and community
+                        support.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Jinja Main Street,</p>
+                    <p><i class="fas fa-phone"></i> +256705243850</p>
+                    <p><i class="fas fa-envelope"></i> hopesmile@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Hope Smile Foundation. All rights reserved. | <a href="#">Privacy Policy</a> | <a
+                        href="#">Terms of
+                        Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-floating">
+        <a href="https://wa.me/15551234567" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Donation Success Modal -->
+    <div id="donationModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h2>Thank You!</h2>
+            <p>Your donation has been received. We'll contact you shortly with payment instructions.</p>
+            <p class="donation-amount">Amount: <span id="modalAmount">$0</span></p>
+            <button class="modal-close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/donate.js"></script>
+</body>
+
+</html>
