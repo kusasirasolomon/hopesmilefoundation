@@ -1,0 +1,268 @@
+/* ============================================================
+   HOPE SMILE FOUNDATION — animations.css
+   ============================================================ */
+
+/* ── Fade-in Animations ──────────────────────────────────── */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ── Hero Entry Animations ───────────────────────────────── */
+.hero-left h1 {
+    animation: fadeInUp 0.8s 0.10s ease both;
+}
+
+.hero-left>p {
+    animation: fadeInUp 0.8s 0.25s ease both;
+}
+
+.hero-cta {
+    animation: fadeInUp 0.8s 0.38s ease both;
+}
+
+.hero-right {
+    animation: fadeInRight 0.9s 0.20s ease both;
+}
+
+/* Hero for pages with .hero-left directly in section */
+.hero>.hero-left>h1 {
+    animation: fadeInUp 0.8s 0.10s ease both;
+}
+
+.hero>.hero-left>p {
+    animation: fadeInUp 0.8s 0.25s ease both;
+}
+
+.hero>.hero-left>.hero-cta {
+    animation: fadeInUp 0.8s 0.38s ease both;
+}
+
+.hero>.hero-right {
+    animation: fadeInRight 0.9s 0.20s ease both;
+}
+
+/* ── Page Hero Entries ───────────────────────────────────── */
+.campaigns-hero-content h1,
+.contact-hero-content h1,
+.donate-hero-content h1,
+.about-hero-content h1 {
+    animation: fadeInUp 0.9s 0.10s ease both;
+}
+
+.campaigns-hero-content>p,
+.contact-hero-content>p,
+.donate-hero-content>p,
+.about-hero-content>p {
+    animation: fadeInUp 0.9s 0.25s ease both;
+}
+
+.campaigns-filter,
+.contact-cta-buttons,
+.donate-stats {
+    animation: fadeInUp 0.9s 0.38s ease both;
+}
+
+/* ── Scroll-reveal (triggered by IntersectionObserver) ────── */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Stagger children */
+.stagger>*:nth-child(1) {
+    transition-delay: 0.05s;
+}
+
+.stagger>*:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+.stagger>*:nth-child(3) {
+    transition-delay: 0.25s;
+}
+
+.stagger>*:nth-child(4) {
+    transition-delay: 0.35s;
+}
+
+.stagger>*:nth-child(5) {
+    transition-delay: 0.45s;
+}
+
+.stagger>*:nth-child(6) {
+    transition-delay: 0.55s;
+}
+
+/* ── Hover Lift ──────────────────────────────────────────── */
+.hover-lift {
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(26, 18, 9, 0.14);
+}
+
+/* ── Pulse (attention) ───────────────────────────────────── */
+@keyframes pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(196, 82, 42, 0.40);
+    }
+
+    50% {
+        box-shadow: 0 0 0 12px rgba(196, 82, 42, 0);
+    }
+}
+
+.pulse {
+    animation: pulse 2s ease infinite;
+}
+
+/* ── Loading screen fade out ─────────────────────────────── */
+.loading-screen.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ── Number counter animation (JS-driven) ────────────────── */
+.count-up {
+    display: inline-block;
+    transition: none;
+}
+
+/* ── Progress bar pop-in ─────────────────────────────────── */
+@keyframes progressFill {
+    from {
+        width: 0 !important;
+    }
+}
+
+/* ── Floating Whatsapp bounce ────────────────────────────── */
+@keyframes floatUp {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+.whatsapp-floating a {
+    animation: floatUp 3s ease-in-out infinite;
+}
+
+/* ── Header scroll shrink ────────────────────────────────── */
+.main-header {
+    transition: height 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+/* ── Card shimmer on hover ───────────────────────────────── */
+@keyframes shimmer {
+    from {
+        background-position: -200% center;
+    }
+
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* ── Global JS scroll reveal (add class via main.js) ──────── */
+/* IntersectionObserver watches [data-animate] elements */
+[data-animate] {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+[data-animate].animated {
+    opacity: 1;
+    transform: translateY(0);
+}

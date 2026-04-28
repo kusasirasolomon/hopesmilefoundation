@@ -30,16 +30,16 @@ async function submitToFirebase(formData, collectionName) {
 }
 
 // Newsletter Subscription Handler
-async function handleNewsletterSubscription(email) {
-    const subscriptionData = {
-        email: email,
-        subscribedAt: new Date(),
-        source: 'website',
-        active: true
-    };
+// async function handleNewsletterSubscription(email) {
+//     const subscriptionData = {
+//         email: email,
+//         subscribedAt: new Date(),
+//         source: 'website',
+//         active: true
+//     };
 
-    return await submitToFirebase(subscriptionData, 'newsletterSubscribers');
-}
+//     return await submitToFirebase(subscriptionData, 'newsletterSubscribers');
+// }
 
 // Contact Form Handler
 async function handleContactForm(formData) {

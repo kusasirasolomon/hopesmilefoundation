@@ -1,0 +1,21 @@
+/* ============================================================
+   HOPE SMILE FOUNDATION — heade.css
+   Header extras (used by the second index.html variant)
+   Inherits everything from main.css; add overrides here only.
+   ============================================================ */
+
+/* Ensure the logo span never wraps on small laptops */
+.main-header .logo span {
+    font-size: clamp(13px, 1.4vw, 18px);
+}
+
+/* Tighter header on scroll for the alternate index */
+.main-header.scrolled .container {
+    height: 62px;
+}
+
+/* Active nav indicator pill */
+.main-nav a.active {
+    background: var(--clay-light);
+    color: var(--clay);
+}

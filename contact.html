@@ -7,8 +7,8 @@
     <title>Contact Us - Hope Smile Foundation Charity organisation</title>
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/contactex.css">
-    <link rel="stylesheet" href="CSS/responsive.css">
     <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/about.css">
     <!-- Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap"
@@ -16,7 +16,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Mapbox -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' /> -->
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 
 <body>
@@ -33,7 +35,7 @@
                     <li><a href="campaigns.html">Campaigns</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="donate.html">Donate</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    
                 </ul>
             </nav>
             <a href="donate.html" class="donate-btn primary-cta">Donate Now</a>
@@ -100,7 +102,7 @@
                     </div>
                     <h3>WhatsApp</h3>
                     <p>Quick responses via WhatsApp for instant support and inquiries.</p>
-                    <a href="https://wa.me/15551234567" class="contact-link whatsapp-link" target="_blank">
+                    <a href="https://wa.me/705243850" class="contact-link whatsapp-link" target="_blank">
                         <i class="fab fa-whatsapp"></i> Chat on WhatsApp
                     </a>
                 </div>
@@ -167,7 +169,14 @@
                 </div>
     
                 <!-- Map -->
-                <div class="contact-map-container" id="map">
+                <div class="contact-map-container">
+                    <h2>Our Location</h2>
+                    <div class="map-wrapper">
+                        <div id="map"></div>
+                    </div>
+                </div>
+                <!-- <div id="map"></div> -->
+                <!-- <div class="contact-map-container" id="map">
                     <h2>Our Location</h2>
                     <div class="map-wrapper">
                         <div id="map" class="map"></div>
@@ -177,7 +186,7 @@
                             <p><i class="fas fa-clock"></i> Open: Mon-Fri 9AM-5PM</p>
                             <p><i class="fas fa-phone"></i> +256705243850</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -191,37 +200,37 @@
     
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                    <img src="https://res.cloudinary.com/dupeojmpy/image/upload/v1776939363/secretary_m3shze.jpg"
                         alt="Sarah Johnson">
-                    <h3>Sarah Johnson</h3>
+                    <h3>Sarah Namubiru</h3>
                     <p class="team-role">Director of Operations</p>
                     <p>Oversees all programs and partnerships</p>
                     <div class="team-contact">
-                        <a href="mailto:sarah@kidhope.org"><i class="fas fa-envelope"></i> sarah@hopesmile.org</a>
+                        <!-- <a href="mailto:sarah@kidhope.org"><i class="fas fa-envelope"></i> </a> -->
                         <a href="tel:+15551234567"><i class="fas fa-phone"></i> Ext. 101</a>
                     </div>
                 </div>
     
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                    <img src="https://res.cloudinary.com/dupeojmpy/image/upload/v1776940367/HELPINGOTHERS_SECTION_auiv1g_u3d5js.jpg"
                         alt="Michael Chen">
-                    <h3>Michael Kirunda</h3>
+                    <h3>Ivan</h3>
                     <p class="team-role">Donation Coordinator</p>
                     <p>Manages donations and donor relations</p>
                     <div class="team-contact">
-                        <a href="mailto:michael@kidhope.org"><i class="fas fa-envelope"></i> michael@hopesmile.org</a>
+                        <!-- <a href="mailto:michael@kidhope.org"><i class="fas fa-envelope"></i> michael@hopesmile.org</a> -->
                         <a href="tel:+15551234568"><i class="fas fa-phone"></i> Ext. 102</a>
                     </div>
                 </div>
     
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
+                    <img src="https://res.cloudinary.com/dupeojmpy/image/upload/v1776940674/download_17_utrkpm.jpg"
                         alt="Amina Diallo">
                     <h3>Amina Diallo</h3>
                     <p class="team-role">Volunteer Coordinator</p>
                     <p>Coordinates volunteer programs and activities</p>
                     <div class="team-contact">
-                        <a href="mailto:amina@kidhope.org"><i class="fas fa-envelope"></i> amina@hopesmile.org</a>
+                        <!-- <a href="mailto:amina@kidhope.org"><i class="fas fa-envelope"></i> </a> -->
                         <a href="tel:+15551234569"><i class="fas fa-phone"></i> Ext. 103</a>
                     </div>
                 </div>
@@ -255,7 +264,7 @@
                     </div>
                     <div class="faq-answer">
                         <p>We welcome volunteers! Please fill out our volunteer application form or contact our
-                            Volunteer Coordinator, Amina Diallo, at volunteer@kidhope.org. We have opportunities in
+                            Volunteer Coordinator, Amina Diallo, at https://hopesmilefoundation.vercel.app/donate.html/donate-here. We have opportunities in
                             education, fundraising, events, and administrative support.</p>
                     </div>
                 </div>
@@ -310,8 +319,9 @@
                 </div>
                 <div class="footer-col">
                     <h4>Contact Info</h4>
-                    <p><i class="fas fa-map
-                                                <p><i class=" fas fa-map-marker-alt"></i> 123 Jinja Main Street</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Jinja Main Street</p>
+                    
+                                               
                     <p><i class="fas fa-phone"></i> +256705243850</p>
                     <p><i class="fas fa-envelope"></i> hopesmile@gmail.com</p>
                 </div>
@@ -324,11 +334,11 @@
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
-                    <p>Subscribe to our newsletter</p>
+                    <!-- <p>Subscribe to our newsletter</p>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Your email">
                         <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
             <div class="footer-bottom">
@@ -357,5 +367,55 @@
             <button class="modal-close-btn">Close</button>
         </div>
     </div>
+
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- Mapbox -->
+    <style>
+        #map {
+            height: 400px;
+        }
+    </style>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
+    <script>
+        window.onload = () => {
+            const map = L.map('map').setView([0.4244, 33.2042], 14);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+
+            L.marker([0.4244, 33.2042])
+                .addTo(map)
+                .bindPopup('<h3>KidHope Headquarters</h3>')
+                .openPopup();
+        };
+    </script>
     
     
+    <script>
+        
+        
+        
+        
+            const faqQuestions = document.querySelectorAll(".faq-question");
+
+            faqQuestions.forEach(question => {
+                question.addEventListener("click", () => {
+                    const faqItem = question.parentElement;
+
+                    // Toggle active class
+                    faqItem.classList.toggle("active");
+                });
+            });
+        </script>
+    </body>
+    
+    </html>
+
+
+        

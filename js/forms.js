@@ -1,5 +1,5 @@
 // Web3Forms Configuration
-const WEB3FORMS_ACCESS_KEY = 'YOUR_ACCESS_KEY_HERE'; // Replace with your actual key
+const WEB3FORMS_ACCESS_KEY = 'YACCESS_KEY_HERE'; 
 
 async function submitToWeb3Forms(formData, formName) {
     const payload = {
